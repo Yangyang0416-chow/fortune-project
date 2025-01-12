@@ -2,11 +2,13 @@
   "name": "fortune-project",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://fengshui-analysis.netlify.app",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next build && next export"
   },
   "dependencies": {
     "react": "^18.2.0",
