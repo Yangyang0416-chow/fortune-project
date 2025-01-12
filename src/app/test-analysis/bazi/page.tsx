@@ -141,7 +141,7 @@ export default function BaZiAnalysisPage() {
             {/* 提交按钮 */}
             <button
               type="submit"
-              className="w-full py-2 px-4 bg-foreground text-background rounded-md hover:bg-opacity-90 transition"
+              className="feature-card w-full py-3 px-6 text-white bg-blue-600 hover:bg-blue-700"
             >
               开始分析
             </button>

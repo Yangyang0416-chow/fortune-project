@@ -7,10 +7,10 @@ export default function Hero() {
     <div className="py-20 bg-gradient-to-b from-background to-muted">
       <div className="max-w-4xl mx-auto px-4">
         <h1 className="text-4xl md:text-5xl font-bold text-center mb-6">
-          探索命理，优化人生
+        神秘东方风水：带你开启命运探索之旅
         </h1>
         <p className="text-xl text-center text-gray-600 dark:text-gray-300 mb-12">
-          通过专业的命理分析，帮助您更好地认识自己，规划未来
+        探索神秘东方智慧，风水大师解锁专属命运密码
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <Link 

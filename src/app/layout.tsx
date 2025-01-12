@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from 'next/font/google';
+import LanguageSwitch from './components/LanguageSwitch';
+import { LanguageProvider } from './context/LanguageContext';
 import "./globals.css";
 
 const inter = Inter({ 
@@ -27,7 +29,10 @@ export default function RootLayout({
   return (
     <html lang="zh">
       <body className={inter.className}>
-        {children}
+        <LanguageProvider>
+          <LanguageSwitch />
+          {children}
+        </LanguageProvider>
       </body>
     </html>
   );
