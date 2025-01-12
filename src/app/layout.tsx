@@ -29,6 +29,7 @@ export default function RootLayout({
   return (
     <html lang="zh">
       <body className={inter.className}>
+        <div className="ink-texture" />
         <LanguageProvider>
           <LanguageSwitch />
           {children}
