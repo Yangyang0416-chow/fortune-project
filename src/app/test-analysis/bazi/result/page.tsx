@@ -526,13 +526,13 @@ export default function BaziResultPage() {
     <div className="min-h-screen py-12 px-4">
       <div className="max-w-4xl mx-auto">
         <Navigation />
-        <h1 className="text-3xl font-bold mb-8">八字分析结果</h1>
+        <h1 className="text-3xl font-bold mb-8 text-white">八字分析结果</h1>
         <div className="space-y-8">
           {/* 生肖信息 */}
           <div className="p-6 rounded-lg border border-gray-200 dark:border-gray-800">
-            <h2 className="text-xl font-semibold mb-4">您的中国生肖</h2>
+            <h2 className="text-xl font-semibold mb-4 text-gray-900">您的中国生肖</h2>
             <div className="text-center">
-              <span className="text-2xl font-medium text-gray-600 dark:text-gray-300">
+              <span className="text-2xl font-medium text-gray-900">
                 {baziData ? getChineseZodiac(baziData.year, baziData.month, baziData.day) : ''}
               </span>
             </div>
@@ -540,30 +540,30 @@ export default function BaziResultPage() {
 
           {/* 八字信息 */}
           <div className="p-6 rounded-lg border border-gray-200 dark:border-gray-800">
-            <h2 className="text-xl font-semibold mb-4">您的八字</h2>
+            <h2 className="text-xl font-semibold mb-4 text-gray-900">您的八字</h2>
             <div className="grid grid-cols-4 gap-4">
               <div className="text-center">
-                <div className="font-medium">年柱</div>
-                <div className="mt-2 text-gray-600 dark:text-gray-300">{bazi.year}</div>
+                <div className="font-medium text-gray-900">年柱</div>
+                <div className="mt-2 text-gray-800">{bazi.year}</div>
               </div>
               <div className="text-center">
-                <div className="font-medium">月柱</div>
-                <div className="mt-2 text-gray-600 dark:text-gray-300">{bazi.month}</div>
+                <div className="font-medium text-gray-900">月柱</div>
+                <div className="mt-2 text-gray-800">{bazi.month}</div>
               </div>
               <div className="text-center">
-                <div className="font-medium">日柱</div>
-                <div className="mt-2 text-gray-600 dark:text-gray-300">{bazi.day}</div>
+                <div className="font-medium text-gray-900">日柱</div>
+                <div className="mt-2 text-gray-800">{bazi.day}</div>
               </div>
               <div className="text-center">
-                <div className="font-medium">时柱</div>
-                <div className="mt-2 text-gray-600 dark:text-gray-300">{bazi.time}</div>
+                <div className="font-medium text-gray-900">时柱</div>
+                <div className="mt-2 text-gray-800">{bazi.time}</div>
               </div>
             </div>
           </div>
 
           {/* 五行分析 */}
           <div className="p-6 rounded-lg border border-gray-200 dark:border-gray-800">
-            <h2 className="text-xl font-semibold mb-4">五行分析</h2>
+            <h2 className="text-xl font-semibold mb-4 text-gray-900">五行分析</h2>
             <div className="space-y-4">
               <div>
                 <div className="font-medium mb-2">五行比例</div>
@@ -606,7 +606,7 @@ export default function BaziResultPage() {
                   <div>水</div>
                   <div>金</div>
                 </div>
-                <p className="mt-4 text-gray-600 dark:text-gray-300">
+                <p className="mt-4 text-gray-800">
                   {`您的八字中${Object.entries(wuxing).sort((a, b) => b[1] - a[1])[0][0] === 'metal' ? '金' :
                     Object.entries(wuxing).sort((a, b) => b[1] - a[1])[0][0] === 'wood' ? '木' :
                     Object.entries(wuxing).sort((a, b) => b[1] - a[1])[0][0] === 'water' ? '水' :
@@ -622,7 +622,7 @@ export default function BaziResultPage() {
 
           {/* 幸运信息 */}
           <div className="p-6 rounded-lg border border-gray-200 dark:border-gray-800">
-            <h2 className="text-xl font-semibold mb-4">幸运信息</h2>
+            <h2 className="text-xl font-semibold mb-4 text-gray-900">幸运信息</h2>
             <div className="space-y-4">
               <div>
                 <h3 className="font-medium mb-2">幸运颜色</h3>
@@ -655,10 +655,9 @@ export default function BaziResultPage() {
 
           {/* 综合分析 */}
           <div className="p-6 rounded-lg border border-gray-200 dark:border-gray-800">
-            <h2 className="text-xl font-semibold mb-4">综合分析</h2>
+            <h2 className="text-xl font-semibold mb-4 text-gray-900">综合分析</h2>
             <div className="space-y-4">
-              <p 
-                className="text-gray-600 dark:text-gray-300 whitespace-pre-line"
+              <p className="text-gray-800 whitespace-pre-line"
                 dangerouslySetInnerHTML={{ __html: generateAnalysis(baziData) }}
               />
             </div>

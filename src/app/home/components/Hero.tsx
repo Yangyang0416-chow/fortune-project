@@ -39,10 +39,10 @@ export default function Hero() {
                   />
                 </svg>
               </div>
-              <h2 className="text-2xl font-semibold text-gray-800">八字精算</h2>
+              <h2 className="text-2xl font-semibold text-gray-700">八字精算</h2>
             </div>
-            <p className="text-gray-600">
-              深入分析您的八字命盘，揭示性格特质与人生机遇。
+            <p className="text-gray-500">
+              八字命盘分析，揭示性格特质与人生机遇。
             </p>
           </Link>
 
@@ -69,7 +69,7 @@ export default function Hero() {
               <h2 className="text-2xl font-semibold text-gray-800">风水旺运</h2>
             </div>
             <p className="text-gray-600">
-              专业的风水环境分析，助您打造顺心如意的生活空间。
+              风水大师点拨，助您打造顺心如意的生活空间。
             </p>
           </Link>
         </div>

@@ -6,7 +6,7 @@ export default function Features() {
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-200/20 to-transparent"></div>
       
       <div className="max-w-4xl mx-auto px-4">
-        <h2 className="text-2xl font-bold text-center mb-12 text-white animate-fade-in">
+        <h2 className="text-2xl font-bold text-center mb-12 text-white drop-shadow-lg animate-fade-in">
           为什么选择我们的服务
         </h2>
         
@@ -27,8 +27,8 @@ export default function Features() {
                 />
               </svg>
             </div>
-            <h3 className="text-lg font-semibold mb-2 text-gray-800">专业分析</h3>
-            <p className="text-gray-600">
+            <h3 className="text-lg font-semibold mb-2 text-gray-700">专业分析</h3>
+            <p className="text-gray-500">
               基于传统命理学和现代心理学，提供专业的分析和建议
             </p>
           </div>
