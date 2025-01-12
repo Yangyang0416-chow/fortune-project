@@ -1,17 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from 'next/font/google';
 import Link from 'next/link';
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: '命理分析 - 探索命理，优化人生',
@@ -32,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={inter.className}>
         <header className="border-b border-gray-200 dark:border-gray-800">
           <div className="max-w-6xl mx-auto py-4 px-4">
             <nav className="flex items-center justify-between">
