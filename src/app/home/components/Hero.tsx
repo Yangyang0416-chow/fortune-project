@@ -4,18 +4,24 @@ import Link from 'next/link';
 
 export default function Hero() {
   return (
-    <div className="py-20">
+    <div className="py-20 relative">
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-200/20 to-transparent"></div>
+      
       <div className="max-w-4xl mx-auto px-4">
-        <h1 className="text-4xl md:text-5xl font-bold text-center mb-6 text-white">
-          神秘东方风水：带你开启命运探索之旅
-        </h1>
-        <p className="text-xl text-center text-gray-200 mb-12">
-          探索神秘东方智慧，风水大师解锁专属命运密码
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="text-center mb-16">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white animate-fade-in">
+            神秘东方风水：带你开启命运探索之旅
+          </h1>
+          <p className="text-xl text-gray-200 mb-12 animate-fade-in delay-100">
+            探索神秘东方智慧，风水大师解锁专属命运密码
+          </p>
+          <div className="w-24 h-1 bg-blue-500 mx-auto rounded-full"></div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <Link 
             href="/test-analysis/bazi"
-            className="feature-card hover:bg-white/90"
+            className="feature-card group hover:bg-white/90 animate-fade-in delay-200"
           >
             <div className="flex items-center mb-4">
               <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
@@ -42,7 +48,7 @@ export default function Hero() {
 
           <Link 
             href="/test-analysis/fengshui"
-            className="feature-card hover:bg-white/90"
+            className="feature-card group hover:bg-white/90 animate-fade-in delay-300"
           >
             <div className="flex items-center mb-4">
               <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
